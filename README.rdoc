@@ -1,0 +1,22 @@
+=Introduction
+
+This is a proof-of-concept setup for using Cucumber, Webrat, and Selenium in a non-Rails environment to perform acceptance testing.  
+
+=Configuration
+
+This code snippet requires the following gems and their dependencies (versions must be at least as high as the ones provided):
+
+ * Selenium (1.1.14, with using Selenium .jar 1.0.3)
+ * selenium-client (1.2.18)
+ * webrat (0.7.0)
+ * cucumber (0.6.3)
+
+Note that you also have to update the selenium-server.jar file in the Selenium gem to 1.0.3 or greater in order to make this work with Firefox 3.6.
+
+Also, Webrat claims that it will automatically launch the selenium server upon test execution, but I had to start it manually at the command line.
+
+For the rest of the configuration, please see the support/env.rb file.
+
+=Usage
+
+Run <tt>cucumber</tt> from the root path of this directory structure.
