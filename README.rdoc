@@ -11,7 +11,7 @@ This code snippet requires the following gems and their dependencies (versions m
  * webrat (0.7.0)
  * cucumber (0.6.3)
 
-Note that you also have to update the selenium-server.jar file in the Selenium gem to 1.0.3 or greater in order to make this work with Firefox 3.6.
+Note that you also have to update the <tt>selenium-server.jar.txt</tt> file in the Selenium gem (usually located in /Library/Ruby/Gems/1.8/gems/Selenium-1.1.14/lib/selenium/openqa) to 1.0.3 or greater in order to make this work with Firefox 3.6.  You can do this by downloading the latest Selenium RC release from http://seleniumhq.org/download/, and copying the selenium-server.jar file to selenium-server.jar.txt in your Selenium gem path.
 
 Also, Webrat claims that it will automatically launch the selenium server upon test execution, but I had to start it manually at the command line.
 
